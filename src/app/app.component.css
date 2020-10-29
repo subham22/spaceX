@@ -1,0 +1,39 @@
+
+
+.filter-btn {
+    background: #C5E09B;
+    border:0px;
+
+    border-radius: 4px;
+    padding:0px 5px 0px 5px;
+}
+.filter-btn:focus, .filter-btn:visited  {
+    outline: none;
+    background: #7CBB00;
+}
+.column {
+    float: left;
+    width: 23%;
+}
+.image-preview {
+    height: auto;
+    width: 100%;
+    background-color: #F2F2F2 !important;
+    margin: 15px auto auto auto;
+}
+.image-preview img {
+    height:auto;
+    width: 100%;   
+}
+
+.text-blue {
+    color : #5A659B;
+    margin:auto;
+}
+.launch-section {
+    border: 6px solid #F2F2F2;
+}
+
+.col {
+    max-height: 510px;
+}
