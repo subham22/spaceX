@@ -2,6 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.4.
 
+## Aproach Used
+
+App component checkes query params in URL and according to that sends HTTP GET request to API end point and gets data.
+
+## Tech Stack Used
+Angular Cli V 8, Bootstrap 4.5 and TypeScript V 3.5
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
