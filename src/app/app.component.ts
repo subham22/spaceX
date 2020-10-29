@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
     currentYear;
     launchData;
     launch_success: boolean;
-    isLoading  = false;
+    isLoading = false;
     constructor(private router: Router, public appservice: AppServiceService, private route: ActivatedRoute) {
 
     }
@@ -23,10 +23,10 @@ export class AppComponent implements OnInit {
         for (let i = 2006; i <= 2020; i++) {
             this.yearArr.push(i)
         }
-        
+
         this.router.events.subscribe((event) => {
-            setTimeout(() => {
-                this.isLoading = true;
+
+            this.isLoading = true;
             if (event instanceof NavigationEnd) {
                 this.route.queryParams.pipe(shareReplay(1)).subscribe(params => {
                     let queryParams = ''
@@ -39,8 +39,6 @@ export class AppComponent implements OnInit {
                     })
                 })
             }
-              }, 1000)
-            
         })
     }
 
