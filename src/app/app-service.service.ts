@@ -10,7 +10,6 @@ export class AppServiceService {
   constructor(public http : HttpClient) { }
   API_URL = "https://api.spaceXdata.com/v3/launches?limit=100"
   getData(params?){
-    console.log(this.API_URL + params )
     return this.http.get(this.API_URL + params  )
   }
 }

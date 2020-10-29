@@ -23,8 +23,10 @@ export class AppComponent implements OnInit {
         for (let i = 2006; i <= 2020; i++) {
             this.yearArr.push(i)
         }
+        
         this.router.events.subscribe((event) => {
-            this.isLoading = true;
+            setTimeout(() => {
+                this.isLoading = true;
             if (event instanceof NavigationEnd) {
                 this.route.queryParams.pipe(shareReplay(1)).subscribe(params => {
                     let queryParams = ''
@@ -37,6 +39,8 @@ export class AppComponent implements OnInit {
                     })
                 })
             }
+              }, 1000)
+            
         })
     }
 
