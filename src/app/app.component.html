@@ -1,7 +1,6 @@
 <div class="container-fluid pl-5" *ngIf = "!isLoading">
     <h5>SpaceX Launch Program</h5>
     <div class="row">
-
         <div class="col bg-white">
             <div>
                 <h6>Filters</h6>
@@ -46,6 +45,15 @@
             </div>
         </div>
     </div>
-
 </div>
-<p *ngIf = "isLoading">Loading</p>
+<footer class="footer pt-5" *ngIf = "!isLoading">
+    <div class="container text-center">
+      <span class="font-weight-bold">Developed by:</span> Subham Kumar
+    </div>
+</footer>
+
+<div class = "loader" *ngIf = "isLoading">
+    <div class="spinner-border" role="status"  >
+        <span class="sr-only">Loading...</span>
+      </div>
+</div>
